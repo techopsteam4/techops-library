@@ -48,11 +48,6 @@ def call(String repoUrl){
         sh 'head -3 /etc/passwd'
       }
     }
-    stage('bash script'){
-      steps{
-        sh 'bash/var/lib/jenkins/workspace/etechproject9-ci/opsystemanalysis.sh'
-      }
-    }
   }
 }
  }
