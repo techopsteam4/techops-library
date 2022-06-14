@@ -1,7 +1,14 @@
+Manage Jenkins  => configure system  => global pipeline libraries  => add name of shared library  => populate default version with main 
+Select modern SCM as retrieval method and add shared library repo url
+Go to github and configure a repo ( your shared library repo) 
+creat var directory using camel casing
+def call (String repoUrl){
+echo 'git clone $repoUrl'
+}
 Create vars folder
 Step 2: Create Groovy file
 Step 3: Create call() function inside Groovy file
-Step 4: confugure nder the Library section.
+Step 4: confugure under the Library section.
 Save changes
 .........................................................................
 Now that our shared library is configured in Jenkins, let’s create a new Jenkins job to utilize this Jenkins pipeline library.
